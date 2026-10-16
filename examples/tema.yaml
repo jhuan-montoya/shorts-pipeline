@@ -1,0 +1,13 @@
+# Identidade visual de exemplo (canal fictício).
+background: "#0B1F3A"
+accent: "#7CF2C9"
+alert: "#E5484D"
+handle: "@canalexemplo"
+gradients:
+  - ["#0B1F3A", "#1D4E89"]
+  - ["#0B1F3A", "#2B3F7A"]
+  - ["#0B1F3A", "#12525A"]
+caption:
+  mode: word        # "word" destaca a palavra falada; "group" mostra blocos fixos
+  size: 96
+  max_words: 3

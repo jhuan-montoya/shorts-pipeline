@@ -1,0 +1,23 @@
+# Exemplo fictício: 5 cenas, uma de cada tipo de visual local.
+id: ceu-azul
+title: Por que o céu é azul?
+tts: edge            # troque por "say" (macOS, offline) ou "mock" (mudo, offline)
+voice: pt-BR-AntonioNeural
+rate: "+8%"
+theme: tema.yaml
+
+scenes:
+  - text: "Você já parou para pensar por que o céu é azul? A resposta cabe em quinze segundos."
+    visual: {type: card, style: alert, label: "CURIOSIDADE", lines: ["Física em 20 segundos"], color: "#2F7DE1"}
+
+  - text: "A luz do sol parece branca, mas ela mistura todas as cores do arco-íris."
+    visual: {type: color, colors: ["#0B1F3A", "#2F7DE1"]}
+
+  - text: "Ao entrar na atmosfera, ela esbarra nas moléculas do ar e se espalha em todas as direções."
+    visual: {type: card, style: step, label: "ATMOSFERA", lines: ["Luz do sol", "Moléculas de ar", "Luz espalhada"]}
+
+  - text: "A luz azul tem onda curta, então espalha muito mais do que a vermelha. É por isso que o azul domina."
+    visual: {type: card, style: number, label: "1", lines: ["Azul espalha mais"]}
+
+  - text: "Siga o canal para mais curiosidades rápidas."
+    visual: {type: card, style: signature}

@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "shorts-pipeline"
+version = "0.1.0"
+description = "Roteiro YAML/JSON -> short vertical com narração (TTS plugável) e legenda palavra a palavra."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Jhuan Montoya" }]
+requires-python = ">=3.9"
+dependencies = ["pillow>=10.1", "pyyaml>=6"]
+
+[project.optional-dependencies]
+edge = ["edge-tts>=7"]
+dev = ["pytest>=7", "edge-tts>=7"]
+
+[project.scripts]
+shorts = "shorts.cli:main"
+
+[tool.setuptools]
+packages = ["shorts", "shorts.tts"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
